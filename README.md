@@ -32,4 +32,4 @@
 * Movie Catalog Service: http://localhost:8082/catalog/rohit
 * All the microservices uses rest template to communicate with each other.
 * There is also Webclient.builder code (which is commented, can be used upon uncommenting) . WebClient is built upon spring reactive framework where the calls aren't synchronous.  
-* This is based on java brains tutorial on microservices by koushik.
+* This is based on java brains tutorial on microservices by koushik kothagal.
