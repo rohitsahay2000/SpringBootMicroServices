@@ -24,3 +24,11 @@
 		 -- @HystrixProperty(name="circuitBreaker.sleepWindowInMilliseconds", value="5000") --> Every 5 second after circuit breaking the circuit breaker awakes.
 * Incase of any error (timeouts, node downtime) there is an automatic fallback response which is configured.
 * Hystrix Dashboard , hosted at http://localhost:8082/hystrix/monitor --> monitors the calls. 
+
+# Notes
+* No db calls/setup has been made in any microservices. The intent was only to achieve microservices based communication with important concepts revolving around it.
+* User Rating Service: http://localhost:8083/ratingsdata/users/1234
+* Movie Info Service: http://localhost:8081/movies/2002
+* Movie Catalog Service: http://localhost:8082/catalog/rohit
+* All the microservices uses rest template to communicate with each other.
+* There is also Webclient.builder code (which is commented, can be used upon uncommenting) . WebClient is built upon spring reactive framework where the calls aren't synchronous.  
